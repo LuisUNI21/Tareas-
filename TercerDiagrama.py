@@ -1,7 +1,8 @@
+import pandas as pd
+import matplotlib.pyplot as plt
 
-from matplotlib import pyplot as plt
-
-from PrimerDiagrama import df_pen_sales
+file_path = "./Data/Pen Sales Data.xlsx"
+df_pen_sales = pd.read_excel(file_path, sheet_name="Pen Sales")
 
 #purchase Date y Delivery Date
 #print(df_pen_sales["Delivery Date"])
